@@ -1,0 +1,96 @@
+Base Name,Base Code,Payment Terms,Minimum Order Quantity
+Loop Calibrators,CAL-0002,Net 5,1
+Keyboard UK Layout,KEYBOARDUK,Net 5,1
+Desktop Computer,DESKTOPCOMPUTER,Net 5,1
+Home Security Console,HOMESECURITYCONSOLE,Net 5,1
+Doorbell Camera,DOORBELLCAMERA,Net 5,1
+Motion Sensor,MOTIONSENSOR,Net 5,1
+Smart UK Power Strip,SMARTUKPOWERSTRIP,Net 5,1
+Smart UK Power Outlet,SMARTUKPOWEROUTLET,Net 5,1
+Smart US Power Outlet,SMARTUSPOWEROUTLET,Net 5,1
+Camera Mount Microphone,CAMERAMIC,Net 5,1
+Smart EU Power Strip,SMARTEUPOWERSTRIP,Net 5,1
+Smart EU Power Outlet,SMARTEUPOWEROUTLET,Net 5,1
+Smartwatch Band,SMARTWATCHBAND,Net 5,1
+4K Monitor,MONITOR4K,Net 5,1
+Netbook,NETBOOK,Net 5,1
+NetbookPro,NETBOOKPRO,Net 5,1
+Firewall,FIREWALL,Net 5,1
+Solar Controller Hub,SOLARCONTROLLERHUB,Net 5,1
+Flat Roof Mounting Kit,FLATROOFMOUNTINGKIT,Net 5,1
+Inverter,INVERTER,Net 5,1
+Solar Panel 400W,SOLARPANEL400W,Net 5,1
+Angled Roof Mounting Kit,ANGLEDROOFMOUNTINGKIT,Net 5,1
+Charge Controller,CHARGECONTROLLER,Net 5,1
+Ground Mounting Kit,GROUNDMOUNTINGKIT,Net 5,1
+Microinverter,MICROINVERTER,Net 5,1
+Wiring Kit,WIRINGKIT,Net 5,1
+10kWh Battery,10KWHBATTERY,Net 5,1
+Grid Disconnect Switch,GRIDDISCONNECTSWITCH,Net 5,1
+Solar Disconnect Switch,SOLARDISCONNECTSWITCH,Net 5,1
+5kWh Battery,5KWHBATTERY,Net 5,1
+CPU 2.5GHz i7,CPU25GHZI7,Net 5,1
+Router,ROUTER,Net 5,1
+Monitor 1080p,MONITOR1080P,Net 5,1
+Projector,PROJECTOR,Net 5,1
+LTE Hotspot,LTEHOTSPOT,Net 5,1
+"6"" Smartphone",SMARTPHONE6,Net 5,1
+Projector Ceiling Mount,PROJECTORCEILINGMOUNT,Net 5,1
+Copy Machine,COPYMACHINE,Net 5,1
+Copy Binding Module,COPYBINDINGMODULE,Net 5,1
+"10"" Tablet",TABLET10,Net 5,1
+"13"" Laptop",LAPTOP13,Net 5,1
+CPU 1.6GHz i5,CPU16GHZI5,Net 5,1
+RAM 8GB,RAM8GB,Net 5,1
+SSD Hard Drive 128GB,SSD128,Net 5,1
+Exterior Camera,EXTERIORCAMERA,Net 5,1
+Projector Cart,PROJECTORCART,Net 5,1
+Projector Screen,PROJECTORSCREEN,Net 5,1
+Printer Paper Tray,PRINTERPAPERTRAY,Net 5,1
+Security Console,SECURITYCONSOLE,Net 5,1
+Interior Badge Reader,INTERIORBADGEREADER,Net 5,1
+Exterior Badge Reader,EXTERIORBADGEREADER,Net 5,1
+Interior Camera,INTERIORCAMERA,Net 5,1
+"15"" Laptop",LAPTOP15,Net 5,1
+CPU 2.8GHz i7,CPU28GHZI7,Net 5,1
+Interior Keypad,INTERIORKEYPAD,Net 5,1
+Exterior Keypad,EXTERIORKEYPAD,Net 5,1
+RFID Key Card Printer,RFIDKEYCARDPRINTER,Net 5,1
+Electric Door Lock,ELECTRICDOORLOCK,Net 5,1
+Door Sensor,DOORSENSOR,Net 5,1
+Window Sensor,WINDOWSENSOR,Net 5,1
+Optical Drive,OPTICALDRIVE,Net 5,1
+NVMe Hard Drive 500GB,NVME500,Net 5,1
+CPU 3.4GHz i7,CPU34GHZI7,Net 5,1
+CPU 3.8GHz i7,CPU38GHZI7,Net 5,1
+RAM 32GB,RAM32GB,Net 5,1
+Telecommuter Workstation,TELEWORKSTATION,Net 5,1
+Home Automation Hub,HOMEAUTOMATIONHUB,Net 5,1
+4K Video Camera,4KVIDEOCAM,Net 5,1
+Smartwatch,SMARTWATCH,Net 5,1
+Hard Drive 4TB,HDD4TB,Net 5,1
+4 Port USB Hub,4PORTUSBHUB,Net 5,1
+Smart Lightbulb,SMARTLIGHTBULB,Net 5,1
+Smart Blinds,SMARTBLINDS,Net 5,1
+Smart US Power Strip,SMARTUSPOWERSTRIP,Net 5,1
+RAM 16GB,RAM16GB,Net 5,1
+SSD Hard Drive 512GB,SSD512,Net 5,1
+CPU 2.2GHz i7,CPU22GHZI7,Net 5,1
+SSD Hard Drive 256GB,SSD256,Net 5,1
+CPU 1.2GHz m5,CPU12GHZM5,Net 5,1
+CPU 1.1GHz m3,CPU11GHZM3,Net 5,1
+Mouse,MOUSE,Net 5,1
+Laser Printer,LASERPRINTER,Net 5,1
+WiFi Access Point,WIFIAP,Net 5,1
+Keyboard US Layout,KEYBOARDUS,Net 5,1
+Digital Camera,DIGITALCAMERA,Net 5,1
+Printer High Capacity Tray,PRINTERHIGHCAPACITYTRAY,Net 5,1
+GenWatt Diesel 1000kW,GC1060,Net 5,1
+GenWatt Diesel 200kW,GC1040,Net 5,1
+GenWatt Diesel 10kW,GC1020,Net 5,1
+GenWatt Propane 500kW,GC3040,Net 5,1
+GenWatt Propane 100kW,GC3020,Net 5,1
+GenWatt Propane 1500kW,GC3060,Net 5,1
+GenWatt Gasoline 750kW,GC5040,Net 5,1
+GenWatt Gasoline 300kW,GC5020,Net 5,1
+GenWatt Gasoline 2000kW,GC5060,Net 5,1
