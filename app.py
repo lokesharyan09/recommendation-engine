@@ -1,10 +1,26 @@
 import streamlit as st
 import pandas as pd
 import openai
+import boto3
 import os
+from botocore.exceptions import NoCredentialsError
 
-# Set up OpenAI API key
+# Set OpenAI API key from secrets
 openai.api_key = st.secrets["OPENAI_API_KEY"]
+
+# Set up AWS credentials from secrets (these are read from the .streamlit/secrets.toml)
+aws_access_key_id = st.secrets["AWS_ACCESS_KEY_ID"]
+aws_secret_access_key = st.secrets["AWS_SECRET_ACCESS_KEY"]
+aws_region = st.secrets["AWS_REGION"]
+bucket_name = st.secrets["AWS_S3_BUCKET_NAME"]
+
+# Set up S3 client
+s3_client = boto3.client(
+    's3',
+    aws_access_key_id=aws_access_key_id,
+    aws_secret_access_key=aws_secret_access_key,
+    region_name=aws_region
+)
 
 # Load static product data (this will be used as a fallback)
 base_df = pd.read_csv("Base.csv")
@@ -22,24 +38,27 @@ industry_dfs = {
     "Transportation": transportation_df
 }
 
-# Check if Salesforce-uploaded CSV exists
+# Check if Salesforce-uploaded CSV exists in S3
 uploaded_csv_path = "uploaded_from_salesforce.csv"
 uploaded_df = None
 
-if os.path.exists(uploaded_csv_path):
+try:
+    s3_client.download_file(bucket_name, uploaded_csv_path, uploaded_csv_path)
     uploaded_df = pd.read_csv(uploaded_csv_path)
-    st.sidebar.success("Salesforce data loaded successfully.")
+    st.sidebar.success("Salesforce data loaded successfully from S3.")
     st.sidebar.dataframe(uploaded_df.head())
-else:
-    st.sidebar.warning("No Salesforce data received yet.")
+except NoCredentialsError:
+    st.sidebar.warning("AWS credentials not found.")
+except Exception as e:
+    st.sidebar.warning(f"Error loading Salesforce data: {str(e)}")
 
+# Function to generate recommendation based on product and industry
 def get_recommendation(product_name, industry):
     # Check for the product in base data
     base_product = base_df[base_df["Base Name"] == product_name]
     if base_product.empty:
         return None
 
-    # Extract details from base data
     base_code = base_product["Base Code"].values[0]
     base_moq = base_product["Minimum Order Quantity"].values[0]
     base_terms = base_product["Payment Terms"].values[0]
@@ -68,6 +87,7 @@ def get_recommendation(product_name, industry):
         "Payment Terms": terms
     }
 
+# Function to get insights using LLM (OpenAI API)
 def get_deal_insights(product, industry, moq, payment_terms):
     prompt = f"""
     Product: {product}
